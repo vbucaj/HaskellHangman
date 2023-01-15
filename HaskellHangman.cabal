@@ -1,0 +1,36 @@
+cabal-version:      2.4
+name:               HaskellHangman
+version:            0.1.0.0
+synopsis:           See README for more info
+tested-with:        GHC==8.10.7
+
+description:        A guided Hangman project, designed as a companion to the second part of EMURGO Academy's Haskell course.
+homepage:           https://github.com/gitpod-io/template-haskell
+license:            MIT
+license-file:       LICENSE
+author:             Ian Burzynski
+maintainer:         23251244+iburzynski@users.noreply.github.com
+
+category:           Example
+extra-source-files:
+    .hlint.yaml
+    CHANGELOG.md
+    README.md
+
+executable HaskellHangman
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:    A6
+                    , A7
+                    , A8
+                    , Provided
+                    , Sandbox
+
+    build-depends:
+        base ^>=4.14.1.0
+      , directory
+      , mtl >= 2.3
+
+    hs-source-dirs:   solutions
+    default-language: Haskell2010
