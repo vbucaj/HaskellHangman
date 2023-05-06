@@ -36,7 +36,12 @@ setSecret = undefined
 -- *** A6-1: Records & Instances *** --
 
 -- Q#08
-data Game
+data Game = Game {
+    secredWord :: String
+  , currentGuess :: String
+  , guessedMoves :: [Char]
+  , remainingChances :: Int 
+}
 
 -- Q#09
 
